@@ -55,3 +55,27 @@ function DNAtoRNA(dna) {
     return dna.split("T").join("U");
 }
 
+// 11 Is he gonna survive?
+function hero(bullets, dragons){
+    return bullets >= dragons * 2
+}
+
+// 12 Multiplication table for number
+const multiTable = (number) => {
+    let table = '';
+
+    for(let i = 1; i <= 10; i++) {
+        table += `${i} * ${number} = ${i * number}${i < 10 ? '\n' : ''}`;
+    }
+    return table;
+}
+
+// 13 Multiply
+function multiply (a, b) {
+    return a * b;
+}
+
+// 14 Plural
+function plural(n) {
+    return n !== 1;
+}
