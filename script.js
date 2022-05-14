@@ -83,9 +83,22 @@ function plural(n) {
 // 15 Grasshopper - Summation
 var summation = function (num) {
     let result = 0;
-    for (var i = 1; i <= num; i++) {
+    for (let i = 1; i <= num; i++) {
         result += i;
     }
 
     return result;
 }
+
+// 16 Square(n) Sum
+function squareSum(numbers){
+    let result = 0
+    for (let i=0; i<numbers.length; i++) {
+        debugger
+        result += numbers[i]**2
+    }
+    return result
+}
+
+
+
