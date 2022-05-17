@@ -100,5 +100,27 @@ function squareSum(numbers){
     return result
 }
 
+// 17 Volume of a Cuboid
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+        let result = length * width * height
+        return result
+    }
+}
+
+//  18 Convert a String to a Number!
+const stringToNumber = (str) => Number(str);
+
+
+// 19 What is between?
+
+function between(a, b) {
+    let arr = [a]
+    for(i=a; i<b; i++){
+        arr.push(i+1)
+    }
+    return arr
+}
+
 
 
