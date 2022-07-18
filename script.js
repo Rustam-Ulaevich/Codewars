@@ -122,5 +122,11 @@ function between(a, b) {
     return arr
 }
 
+// 20 Remove String Spaces
+
+function noSpace(x){
+    let result = x
+    return result = result.replace(/\s/g, '')
+}
 
 
