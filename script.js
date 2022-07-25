@@ -111,9 +111,7 @@ class Kata {
 //  18 Convert a String to a Number!
 const stringToNumber = (str) => Number(str);
 
-
 // 19 What is between?
-
 function between(a, b) {
     let arr = [a]
     for(i=a; i<b; i++){
@@ -123,10 +121,24 @@ function between(a, b) {
 }
 
 // 20 Remove String Spaces
-
 function noSpace(x){
     let result = x
     return result = result.replace(/\s/g, '')
 }
+
+// 21 Beginner - Reduce but Grow
+function grow(x){
+    return x.reduce((acc, el) => acc * el)
+}
+
+// 22 Use reduce() to calculate the sum of the values in an array
+function sum(array) {
+    return array.reduce( (acc, el) => acc + el)
+}
+
+
+
+
+
 
 
