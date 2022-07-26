@@ -136,6 +136,18 @@ function sum(array) {
     return array.reduce( (acc, el) => acc + el)
 }
 
+//23 Training JS #30: methods of arrayObject---reduce() and reduceRight()
+// function tailAndHead(arr){
+//     debugger
+//     return arr.reduce( (acc, el) => acc % 10 + ( + el)[0])
+// }
+
+//24 Merge two sorted arrays into one
+function mergeArrays(arr1, arr2) {
+    return [...new Set(arr1.concat(arr2).sort((a, b) => a - b))]
+}
+
+
 
 
 
