@@ -147,6 +147,14 @@ function mergeArrays(arr1, arr2) {
     return [...new Set(arr1.concat(arr2).sort((a, b) => a - b))]
 }
 
+//25 Square(n) Sum
+function squareSum(numbers){
+  let result = 0
+  for (let i=0; i<numbers.length; i++) {
+    result = result + (numbers[i]*numbers[i])
+  }
+  return result
+}
 
 
 
