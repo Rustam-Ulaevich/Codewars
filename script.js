@@ -147,6 +147,13 @@ function mergeArrays(arr1, arr2) {
     return [...new Set(arr1.concat(arr2).sort((a, b) => a - b))]
 }
 
+//25 Determine offspring sex based on genes XX and XY chromosomes
+function chromosomeCheck(sperm) {
+    return sperm === 'XY'
+        ? "Congratulations! You're going to have a son."
+        : "Congratulations! You're going to have a daughter."
+}
+
 
 
 
