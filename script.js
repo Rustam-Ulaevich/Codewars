@@ -154,6 +154,12 @@ function chromosomeCheck(sperm) {
         : "Congratulations! You're going to have a daughter."
 }
 
+//26 Simple multiplication
+function simpleMultiplication(number) {
+    return number % 2 == 0 ? number * 8 : number * 9
+}
+
+
 
 
 
