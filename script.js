@@ -158,6 +158,21 @@ function simpleMultiplication(number) {
 }
 
 
+//27 7kyu Count cubes in a Menger Sponge
+
+function calc_ms(n) {
+    let result = 1
+    if(n === 0 ){
+      return result
+    }else{
+      for(let i=1; i<=n; i++){
+        result = result*20
+      }
+    }
+    return result
+  }
+
+
 
 
 
