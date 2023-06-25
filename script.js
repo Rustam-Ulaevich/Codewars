@@ -173,20 +173,25 @@ function calc_ms(n) {
 
 
 //28 7kyu Vowel Count
-
 function getCount(str) {
-    //let count = 0
-    //console.log(str.split)
-    //console.log(Array.from(str))
-    let newArr = Array.from(str).filter( el => el === 'a' | 'e' | 'i' | 'o' | 'u')
-
-    //console.log(newArr)
-
+    let newArr = Array.from(str)
+    .filter( el => el === 'a' | 'e' | 'i' | 'o' | 'u')
     return newArr.length
 }
 
-getCount('abca')
 
+//29 7kyu Credit Card Mask
+function maskify(cc) {
+    let newArr = Array.from(cc)
+    let newAllArray = ''    
+    if( newArr.length > 4 ){
+        let tempArr = newArr.splice( -4, 4)
+        let allSymbol = newArr.map( el => '#')
+        newAllArray = allSymbol.concat(tempArr)
+        return newAllArray.join('')      
+    }
+    return newAllArray
+}
 
 
 
