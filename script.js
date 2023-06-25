@@ -159,7 +159,6 @@ function simpleMultiplication(number) {
 
 
 //27 7kyu Count cubes in a Menger Sponge
-
 function calc_ms(n) {
     let result = 1
     if(n === 0 ){
@@ -170,7 +169,23 @@ function calc_ms(n) {
       }
     }
     return result
-  }
+}
+
+
+//28 7kyu Vowel Count
+
+function getCount(str) {
+    //let count = 0
+    //console.log(str.split)
+    //console.log(Array.from(str))
+    let newArr = Array.from(str).filter( el => el === 'a' | 'e' | 'i' | 'o' | 'u')
+
+    //console.log(newArr)
+
+    return newArr.length
+}
+
+getCount('abca')
 
 
 
