@@ -200,6 +200,28 @@ function litres(time) {
 }
 
 
+//31 
+function basicOp(operation, value1, value2)
+{
+  let result = 0  
+  if(operation === '+'){
+    return result = value1 + value2
+  }
+  if(operation === '-'){
+    return result = value1 - value2
+  }
+  if(operation === '*'){
+    return result = value1 * value2
+  }
+  if(operation === '/'){
+    return result = value1 / value2
+  }
+
+}
+
+basicOp('+', 2, 3)
+
+
 
 
 
