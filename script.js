@@ -194,6 +194,16 @@ function maskify(cc) {
 }
 
 
+//30 8kyu Keep Hydrated!
+function litres(time) {
+    return Math.floor(time/2)
+}
+
+
+
+
+
+
 
 
 
