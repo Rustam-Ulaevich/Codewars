@@ -183,12 +183,12 @@ function getCount(str) {
 //29 7kyu Credit Card Mask
 function maskify(cc) {
     let newArr = Array.from(cc)
-    let newAllArray = ''    
+    let newAllArray = ''
     if( newArr.length > 4 ){
         let tempArr = newArr.splice( -4, 4)
         let allSymbol = newArr.map( el => '#')
         newAllArray = allSymbol.concat(tempArr)
-        return newAllArray.join('')      
+        return newAllArray.join('')
     }
     return newAllArray
 }
@@ -200,10 +200,9 @@ function litres(time) {
 }
 
 
-//31 
-function basicOp(operation, value1, value2)
-{
-  let result = 0  
+//31
+function basicOp(operation, value1, value2) {
+  let result = 0
   if(operation === '+'){
     return result = value1 + value2
   }
@@ -216,10 +215,12 @@ function basicOp(operation, value1, value2)
   if(operation === '/'){
     return result = value1 / value2
   }
-
 }
 
-basicOp('+', 2, 3)
+
+//32 8kyu get character from ASCII Value
+const getChar = (c) => String.fromCharCode(c)
+
 
 
 
