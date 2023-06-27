@@ -222,6 +222,33 @@ function basicOp(operation, value1, value2) {
 const getChar = (c) => String.fromCharCode(c)
 
 
+//33 8kyu String repeat
+function repeatStr (n, s) {
+    let word = s
+    for(let i=1; i<n; i++){
+        word = word+s
+    }
+    return word;
+}
+
+
+//34 8kyu Remove String Spaces
+//const noSpace = x => x.replaceAll(' ', '')
+
+
+//35 8kyu Calculate average
+const findAverage = array => array.length !== 0 ? array.reduce((acc, number) => acc + number, 0) / array.length : 0
+
+
+//36 7kyu What dominates your array?
+function dominator(arr) {
+    return  arr.filter((number, index, numbers) => {
+        return numbers.indexOf(number) !== index;
+    })
+}
+//console.log(dominator([1, 1, 1, 1, 2, 2]))
+
+
 
 
 
