@@ -246,7 +246,7 @@ function dominator(arr) {
         return numbers.indexOf(number) !== index;
     })
 }
-//console.log(dominator([1, 1, 1, 1, 2, 2]))
+console.log(dominator([1, 1, 1, 1, 2, 2]))
 
 
 
