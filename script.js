@@ -246,9 +246,53 @@ function dominator(arr) {
         return numbers.indexOf(number) !== index;
     })
 }
-console.log(dominator([1, 1, 1, 1, 2, 2]))
+// console.log(dominator([1, 1, 1, 1, 2, 2]))
 
 
+//37 Contact Manager (task from Sololearn)
+function contact(name, number) {
+    this.name = name;
+    this.number = number;
+    this.print = function(name, number) {
+        return `${this.name}: ${this.number}`
+    }
+}
+let a = new contact("David", 12345);
+let b = new contact("Amy", 987654321);
+// console.log(a.print());
+// console.log(b.print());
+
+
+//38 Words (task from Sololearn)
+class Add {
+    constructor(...words) {
+        this.words = words;
+    }
+    print(){
+        console.log(`$${this.words.join('$')}$`)
+    }
+}
+
+var x = new Add("hehe", "hoho", "haha", "hihi", "huhu");
+var y = new Add("this", "is", "awesome");
+var z = new Add("lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit");
+// console.log(x.print())
+// y.print();
+// z.print();
+
+//39 The Snail in the Well
+function main() {
+    var depth = parseInt(readLine(), 10);
+    i = 0;
+    for (; depth > 0;) {
+        i++;
+        depth -= 7
+        if (depth > 0) {
+            depth += 2
+        }
+    }
+    console.log(i);
+}
 
 
 
