@@ -294,14 +294,27 @@ function main() {
     console.log(i);
 }
 
-//
+//40 Chuck Norris VII - True or False? (Beginner)
+function ifChuckSaysSo(){
+    return !true
+  }
 
 
+//41 Sentence Smash
+function smash (words) {
+    return  words.join(" ")
+ };
 
+//42 Draw stairs
+function drawStairs(n) {
 
+    let result = ''
 
+    for(let i=0 ; i<n-1; i++){
+        result += 'I\n ' + ' '.repeat(i) 
+    }
 
+    return result + 'I'
+  }
 
-
-
-
+console.log(drawStairs(10))
