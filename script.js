@@ -315,6 +315,45 @@ function drawStairs(n) {
     }
 
     return result + 'I'
-  }
+}
 
-console.log(drawStairs(10))
+// 7 43 Simple Fun #194: Binary String
+function binStr(s) {
+    let result = [...s]
+    let total = 0
+    
+    if(result.reduce((a, b) => a + b, 0) == 0){
+        return total
+    }
+    for (let i = 0; i < result.length;  i++) {
+        if(result[i] === '1'){
+            result[i] = '0';
+            total += 1;
+            for(let a = 1; a < result.length; a++){
+                if(result[a] === '0'){
+                    result[a] = '1';
+                }
+            }      
+        }
+    return total+1
+    }
+}
+
+// 44 8kyu Short Long Short
+function solution(a, b){
+    let result
+    return result = (a < b ? a : b) + (a > b ? a : b) + (a < b ? a : b)
+}
+
+
+//45 8kyu Find the smallest integer in the array
+function findSmallestInt(arr) {
+    let result = arr[0]
+    for(let a=1; a<=arr.length; a++){
+        if ( result > arr[a] ){
+            result = arr[a]
+        }else{ result }
+    }
+    return result
+  }
+console.log(findSmallestInt([34, -18, 45, 5]))
