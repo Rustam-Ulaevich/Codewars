@@ -356,4 +356,20 @@ function findSmallestInt(arr) {
     }
     return result
   }
-console.log(findSmallestInt([34, -18, 45, 5]))
+
+//46 8kyu Get the mean of an array
+function getAverage(marks){
+    let result = 0
+    for(let i=0; i<marks.length; i++){
+      result = result + marks[i]
+    }
+    result = result / marks.length
+    return Math.round(result)
+  }
+
+//47 8kyu Reversed sequence
+const reverseSeq = n => {
+    let result = []
+    for(let i = 0 ; i < n ; i++)result.push(n - i)
+    return result;
+  };
