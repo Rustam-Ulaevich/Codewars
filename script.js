@@ -373,3 +373,26 @@ const reverseSeq = n => {
     for(let i = 0 ; i < n ; i++)result.push(n - i)
     return result;
   };
+
+//48 https://t.me/js_test/3978
+const numbers = [1, 2, 3, 4, 5];
+const asyncSum = async () => {
+   let sum = 0;
+   for (const num of numbers) {
+      await new Promise(resolve =>
+setTimeout(resolve, 1000));
+      sum += num;
+   }
+   return sum;
+};
+//asyncSum().then(result => console.log(result)); // 15
+
+//49 https://t.me/js_test/3977
+const promise1 = Promise.resolve(5);
+const promise2 = 42;
+const promise3 = new Promise((resolve, reject) => {
+   setTimeout(resolve, 100, 'foo');
+});
+
+Promise.all([promise1, promise2, promise3])
+   .then(values => console.log(values))
