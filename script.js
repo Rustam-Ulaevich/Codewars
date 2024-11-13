@@ -388,11 +388,23 @@ setTimeout(resolve, 1000));
 //asyncSum().then(result => console.log(result)); // 15
 
 //49 https://t.me/js_test/3977
-const promise1 = Promise.resolve(5);
-const promise2 = 42;
-const promise3 = new Promise((resolve, reject) => {
-   setTimeout(resolve, 100, 'foo');
-});
+// const promise1 = Promise.resolve(5);
+// const promise2 = 42;
+// const promise3 = new Promise((resolve, reject) => {
+//    setTimeout(resolve, 100, 'foo');
+// });
 
-Promise.all([promise1, promise2, promise3])
-   .then(values => console.log(values))
+// Promise.all([promise1, promise2, promise3])
+// //   .then(values => console.log(values))
+
+// let aa = {}
+// let bb = {}
+// console.log(aa.prototype == bb.prototype) 
+
+//50 8kyu Fake Binary
+function fakeBin(x){
+    let array = x.split('')    
+    for( i = 0 ; i < array.length ; i++)array[i] >= 5 ? array[i] = '1' : array[i] = '0'
+    return array.join()
+}
+console.log(fakeBin('5284654'))
