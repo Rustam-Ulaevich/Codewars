@@ -402,9 +402,41 @@ setTimeout(resolve, 1000));
 // console.log(aa.prototype == bb.prototype) 
 
 //50 8kyu Fake Binary
-function fakeBin(x){
-    let array = x.split('')    
-    for( i = 0 ; i < array.length ; i++)array[i] >= 5 ? array[i] = '1' : array[i] = '0'
-    return array.join()
+// function fakeBin(x){
+//     let array = x.split('')    
+//     for( i = 0 ; i < array.length ; i++)array[i] >= 5 ? array[i] = '1' : array[i] = '0'
+//     return array.join()
+// }
+// console.log(fakeBin('5284654'))
+
+//51 8kyu Abbreviate a Two Word Name
+function abbrevName(name){
+
+    // code away
+
 }
-console.log(fakeBin('5284654'))
+
+//52 8 kyu Classic Hello World
+class Solution{
+    static main() {
+      console.log("Hello World!");
+    }  
+}
+
+
+//53 7 kyu 
+function calculateProbability(n){
+
+    function fac(n){
+        if( n === 0){
+            return 1
+        }else{
+            return n * fac( n-1 )
+        }
+    }
+
+  return fac(364) / fac(365 - n) * Math.pow(365, n-1)    
+
+}
+
+console.log(calculateProbability(23))
