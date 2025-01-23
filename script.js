@@ -438,5 +438,66 @@ function calculateProbability(n){
   return fac(364) / fac(365 - n) * Math.pow(365, n-1)    
 
 }
+//console.log(calculateProbability(23))
 
-console.log(calculateProbability(23))
+
+//54 задача с собеса
+let phrase = 'Hello'
+if(true){
+    let user = 'Jhon';
+    function sayHi(){
+        alert(`${phrase}, ${user}`)
+    }
+}
+//sayHi()  // Что выведет?
+//Ответ: выведет alert
+
+
+//55 задача с собеса. Что делает данная функция?
+function someFn(f, ms) {
+    
+    let isCoolDown = false;
+
+    return function(){
+
+        if(isCoolDown)return;
+
+        f.apply(this,arguments);
+
+        isCoolDown = true;
+
+        setTimeout( () => isCoolDown = false, ms)
+
+    }
+}
+
+
+// 56 8kyu Remove First and Last Character
+
+const removeChar = (str) => {
+    let result = str
+    result = result.split('')
+    result.pop()
+    result.shift()
+    result = result.join('')
+    return result
+}
+
+
+// 57 8kyu Opposite number
+
+function opposite(number) {
+    return number > 0 ? number * (-1) : number + (-number*2)
+  }
+
+
+// 58 8kyu Calculate average
+
+function findAverage(array) {
+    let result
+    result = array.reduce((a,b)=>a+b, 0)
+    if(array.length > 0){
+      return result/array.length
+    }
+    return 0
+  }
