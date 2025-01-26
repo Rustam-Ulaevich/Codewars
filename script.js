@@ -493,11 +493,52 @@ function opposite(number) {
 
 // 58 8kyu Calculate average
 
-function findAverage(array) {
-    let result
-    result = array.reduce((a,b)=>a+b, 0)
-    if(array.length > 0){
-      return result/array.length
-    }
-    return 0
-  }
+// function findAverage(array) {
+//     let result
+//     result = array.reduce((a,b)=>a+b, 0)
+//     if(array.length > 0){
+//       return result/array.length
+//     }
+//     return 0
+// }
+
+ 
+// 59 8kyu Polish alphabet
+
+function correctPolishLetters (string) {
+  let newString = string.split('')
+
+    let newArr =  newString.map((n) => {
+    if(n === 'ą'){
+        return n = 'a'
+    }else if(n === 'ć')
+    {
+        return n = 'c'
+    }else if(n === 'ę')
+    {
+        return n = 'e'
+    }else if(n === 'ł')
+    {
+        return n = 'l'
+    }else if(n === 'ń')
+    {
+        return n = 'n'
+    }else if(n === 'ó')
+    {
+        return n = 'o'
+    }else if(n === 'ś')
+    {
+        return n = 's'
+    }else if(n === 'ź')
+    {
+        return n = 'z'
+    }else if(n === 'ż')
+    {
+        return n = 'z'
+    }else return n
+    })
+    return newArr.join('')
+
+}
+
+console.log(correctPolishLetters('Jędrzej'))
