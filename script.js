@@ -540,5 +540,64 @@ function correctPolishLetters (string) {
     return newArr.join('')
 
 }
+//console.log(correctPolishLetters('Jędrzej'))
 
-console.log(correctPolishLetters('Jędrzej'))
+
+//60 Задача с собеса
+const arp = [
+    {code: 488, curr: 'RUB', balance: 4354.23, name: 'White'},
+    {code: 332, curr: 'EUR', balance: 212.33, name: 'Black'},
+    {code: 543, curr: 'USD', balance: 324.33, name: 'Red'},
+    {code: 652, curr: 'RUB', balance: 3443.23, name: 'Green'},
+    {code: 321, curr: 'EUR', balance: 643.33, name: 'Yellow'},
+    {code: 754, curr: 'USD', balance: 0, name: 'Grey'}
+];
+
+
+//61 8kyu No zeros for heroes
+
+// function noBoringZeros(n) {
+//     let m = String(n)
+//     let a = m.split('')
+
+//     for(let i = a.length-1 ; a[i]=='0'; i--){
+//         delete a[i]        
+//     }
+//     let b = Number(a.join(''))
+//     return b
+// }
+    
+// console.log(noBoringZeros(145000));
+
+
+// 62 6kyu Unique in Order
+
+var uniqueInOrder = function(arr){
+
+    function arrFn(n){
+        for( let i = 0; i < arr.length; i++){
+            if(arr[i] == arr[i+1]){
+              delete arr[i]
+            }
+        }
+
+    }
+
+    if(typeof arr === 'string'){
+        arr = arr.split('')
+        arrFn(arr)
+        arr = arr.join('').split('')    
+    }else if(typeof arr[0] === 'string'){
+        arrFn(arr)
+        arr = arr.join('').split('') 
+    }else{      
+        arrFn(arr)
+        arr = arr.join('').split('').map(n => Number(n))
+    }
+    return arr
+}
+
+console.log(uniqueInOrder('AAAABBBCCCCCDAAABBBB'))
+console.log(uniqueInOrder([1,2,2,3,3]))
+console.log(uniqueInOrder(['a', 'a', 'a', 'b', 'b']))
+
