@@ -639,3 +639,11 @@ const rps = (p1, p2) => {
 };
 
 
+//  64 8kyu Even or Odd
+
+function evenOrOdd(number) { return (number % 2 == 0) ?  "Even" :  "Odd" }
+
+
+
+
+
