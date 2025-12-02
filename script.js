@@ -580,7 +580,6 @@ var uniqueInOrder = function(arr){
               delete arr[i]
             }
         }
-
     }
 
     if(typeof arr === 'string'){
@@ -597,7 +596,46 @@ var uniqueInOrder = function(arr){
     return arr
 }
 
-console.log(uniqueInOrder('AAAABBBCCCCCDAAABBBB'))
-console.log(uniqueInOrder([1,2,2,3,3]))
-console.log(uniqueInOrder(['a', 'a', 'a', 'b', 'b']))
+// console.log(uniqueInOrder('AAAABBBCCCCCDAAABBBB'))
+// console.log(uniqueInOrder([1,2,2,3,3]))
+// console.log(uniqueInOrder(['a', 'a', 'a', 'b', 'b']))
+
+
+
+let name = prompt("Здравствуйте, введите название препарата")
+let doza = Number(prompt("Какая дозировка вам нужна?"))
+let quantity = (prompt("Какое количество таблеток?"))
+alert("Цена со скидкой  по карте - N руб.,  обычная цена  - N руб")
+let order = confirm("Желаете заказать товар?")
+if (order) {
+    let name2  = prompt("Введите имя")
+    let phoneNumber = prompt("Введите номер телефона")
+    let zakaz = confirm("Оформить заказ?")
+    let user = confirm( `${name2}, Вы успешно  оформили заказ N. Информацию о готовности заказа ожидайте в СМС`)
+}
+else{
+    alert("Продолжить поиск лекарств") 
+}
+
+
+// 63 8kyu Rock Paper Scissors!
+
+const rps = (p1, p2) => {
+  if(p1 == p2)
+    return 'Draw!';
+  
+  if(p1 == 'rock' && p2 == 'scissors'){
+    return 'Player 1 won!'
+  }
+  else if(p1 == 'scissors' && p2 == 'paper'){
+    return 'Player 1 won!'
+  }
+  else if(p1 == 'paper' && p2 == 'rock'){
+    return 'Player 1 won!'
+  }
+  else{
+    return 'Player 2 won!'
+  }
+};
+
 
